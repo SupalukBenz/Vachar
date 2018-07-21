@@ -35,9 +35,9 @@
   margin-bottom: 30px;
 }
 
-#submit-button {
-  float: right;
-  margin-top: 20px;
+#submit {
+  margin-top: 35px;
+  margin: auto;
 }
 
 .text-secure {
@@ -76,6 +76,6 @@
   border-radius: 10px;
   /* background: rgba(155, 195, 250, 0.507); */
   background: gray;
-  color: rgb(48, 48, 48);
+  color: white;
   padding: 10px;
 }
