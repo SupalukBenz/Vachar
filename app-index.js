@@ -5,6 +5,16 @@ $(function () {
   let carParkNum = 10;
   let qrNum = 7;
 
+  $.ajax({
+    type: "GET",
+    url: "http://ecourse.cpe.ku.ac.th/exceed/api/larmpalm_qr/view/",
+    success: function (response) {
+      if (response == 9) {
+        window.location.replace("https://supalukbenz.github.io/Vachar.github.io/");
+      }
+    }
+  });
+
   $('#logout-button').on('click', function () {
     $.ajax({
       type: "POST",
@@ -38,7 +48,7 @@ $(function () {
         }
       }
     });
-  }, 1000);
+  }, 5000);
   let carInterval = setInterval(function () {
     $.ajax({
       type: "GET",
@@ -51,7 +61,7 @@ $(function () {
           if (qrNum == 9) {
             $('#thieveModal').modal('show');
             $('#image-secure').html('<img src="./images/unsecure.png" width="90" height="100%" style=" margin-left: 30px;">')
-            $('#text-security').html('<h2 class="text-unsecure">UNSECURE</h2>')
+            $('#text-security').html('<h2 class="text-unsecure">INSECURE</h2>')
             $('#bell-security').html('<img src="./images/vacarbell-on.png" width="65" height="65" class="bell-size">')
             $('#submit').html('<button type="button" id="submit-button" class="btn btn-secondary btn-lg btn-block">SUBMIT</button>')
 
@@ -78,7 +88,7 @@ $(function () {
         }
       }
     });
-  }, 1000);
+  }, 5000);
 
 });
 
