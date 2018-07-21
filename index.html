@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./style-index.css">
+  <title>Varcar</title>
+</head>
+
+<body>
+  <div class="page">
+    <div class="container">
+      <!-- <button id="button-test">click</button> -->
+      <div id="checkqr">
+        <!-- <h1>test</h1> -->
+      </div>
+      <!-- alert sun -->
+      <div class="modal" id="sunModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Alert</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Now, Your car is very hot!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" id="warning-sun" data-dismiss="modal">
+
+                <a href="tel:0947740519">Call to Reception</a>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- alert thieve -->
+      <div class="modal" id="thieveModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Alert</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Now, Your car is stolen!</p>
+              <p>Reception is sending a security guard to the car parking and closing the exit.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" id="warning-thieve" data-dismiss="modal">
+
+                <a href="tel:0947740519">Call to Reception</a>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+
+      </div>
+
+      <div class="status">
+        <div class="border-status">
+          <div class="row">
+            <div id="image-secure">
+              <img src="./images/secure.png" width="90" height="100%" style=" margin-left: 30px;">
+            </div>
+            <div id="text-security">
+              <h2 class="text-secure">SECURE</h2>
+            </div>
+            <div id="bell-security">
+
+              <img src="./images/vacarbell-off.png" width="65" height="65" class="bell-size">
+
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- <div id="image-normal">
+              <img src="./images/normal.png" width="90" height="100%" style=" margin-left: 30px;">
+            </div>
+            <div id="text-norm">
+              <h2 class="text-normal">NORMAL</h2>
+            </div>
+            <div id="bell-norm">
+              <img src="./images/vacarbell-off.png" width="65" height="65" class="bell-size">
+            </div> -->
+
+            <div id="submit"></div>
+          </div>
+
+        </div>
+        <div class="logout" id="logout-button">
+          <p class="description-logout">Press log out button when you are leaving from vacar parking </p>
+          <button type="button" class="btn btn-danger btn-lg">LOG OUT</button>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="background-image"></div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+  <script src="./app-index.js"></script>
+</body>
+
+</html>
